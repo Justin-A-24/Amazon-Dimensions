@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 926420186}
   - component: {fileID: 926420185}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Roles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,7 +223,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -67.6, y: -1.9000015}
-  m_SizeDelta: {x: 123.94, y: 205}
+  m_SizeDelta: {x: 123.9, y: 230.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926420185
 MonoBehaviour:
@@ -257,17 +257,23 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Animators
+  m_Text: 'Artists
 
 
 
 
 
-    Programmers
+    Engineers
 
 
 
     Sound Designer
+
+
+    Creative Director
+
+
+    Project Manager
 
 
     Special Thanks'
@@ -474,7 +480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -208}
+  m_AnchoredPosition: {x: 0, y: -222}
   m_SizeDelta: {x: 100, y: 88.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1218375291
@@ -506,7 +512,7 @@ GameObject:
   - component: {fileID: 1486689204}
   - component: {fileID: 1486689203}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Names
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -527,8 +533,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 66.6, y: -2.425}
-  m_SizeDelta: {x: 123.9, y: 203.95}
+  m_AnchoredPosition: {x: 66.6, y: -9}
+  m_SizeDelta: {x: 123.9, y: 242.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486689203
 MonoBehaviour:
@@ -577,6 +583,12 @@ MonoBehaviour:
 
 
     Kris Kath
+
+
+    Janet Doan
+
+
+    Justin Acosta
 
 
     VGDA Admins for organizing this event'
