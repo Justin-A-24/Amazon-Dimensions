@@ -15,13 +15,17 @@ public class ConveyorBelt : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-        other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, speed* Time.deltaTime);
+        if (other.gameObject.CompareTag("Objects"))
+        {
+            other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, speed * Time.deltaTime);
+        }
+
     }
 	
 	// Update is called once per frame
 	void Update () {
         
-        if (end.strikes >= 3)
+        if (end.strikes >= 5)
         {
             anim.gameObject.GetComponent<Animator>().enabled = false;
             audi.gameObject.GetComponent<AudioSource>().Stop();

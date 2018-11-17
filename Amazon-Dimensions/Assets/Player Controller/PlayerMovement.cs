@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed;
 
-    public Rigidbody2D rb;
-    private Vector2 moveVelocity;
+    public Rigidbody rb;
+    private Vector3 moveVelocity;
 
     void start()
     {
@@ -17,7 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"),0);
+        //Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"),0);
+        Vector3 moveInput = new Vector2(Input.GetAxis("Horizontal"), 0);
         moveVelocity = moveInput.normalized * speed;
     }
 

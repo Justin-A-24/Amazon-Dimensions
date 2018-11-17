@@ -22,7 +22,7 @@ public class RandomObjectSpawner : MonoBehaviour {
 
     void Spawn()
     {
-        if (end.strikes >= 3)
+        if (end.strikes >= 5)
         {
             GameObject[] prefabs = GameObject.FindGameObjectsWithTag("Objects");
             foreach (GameObject objects in prefabs)

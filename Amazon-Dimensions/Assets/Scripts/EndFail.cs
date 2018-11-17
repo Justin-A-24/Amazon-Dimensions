@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EndFail : MonoBehaviour {
 
-    public GameObject strike1, strike2, strike3;
+    public GameObject strike1, strike2, strike3, strike4, strike5;
     public Transform endpoint;
     public int strikes;
 
@@ -17,6 +17,8 @@ public class EndFail : MonoBehaviour {
         strike1.GetComponent<GameObject>();
         strike2.GetComponent<GameObject>();
         strike3.GetComponent<GameObject>();
+        strike4.GetComponent<GameObject>();
+        strike5.GetComponent<GameObject>();
     }
 	
 	// Update is called once per frame
@@ -35,8 +37,16 @@ public class EndFail : MonoBehaviour {
         if (strikes == 3)
         {
             strike3.SetActive(true);
-            failText.text = "You fucking suck";
+        }
 
+        if (strikes == 4)
+        {
+            strike4.SetActive(true);
+        }
+
+        if (strikes == 5)
+        {
+            strike5.SetActive(true);
         }
     }
 
