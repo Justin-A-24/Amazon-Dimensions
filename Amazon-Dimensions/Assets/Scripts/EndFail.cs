@@ -7,23 +7,36 @@ public class EndFail : MonoBehaviour {
 
     public GameObject strike1, strike2, strike3, strike4, strike5;
     public Transform endpoint;
+
     public int strikes;
 
-    public Text failText;
+    public GameObject fired;
+
+    public int gameTime;
+    public Text timeText;
+
+    public bool gameOver;
 
 	// Use this for initialization
 	void Start () {
-        failText.text = "";
         strike1.GetComponent<GameObject>();
         strike2.GetComponent<GameObject>();
         strike3.GetComponent<GameObject>();
         strike4.GetComponent<GameObject>();
         strike5.GetComponent<GameObject>();
+
+        fired.GetComponent<GameObject>();
+
+        InvokeRepeating("Count", 0.0f, 1.0f);
+
+        gameOver = false;
     }
 	
 	// Update is called once per frame
 	void Update ()
     {
+        timeText.text = "Time Left:" + gameTime.ToString();
+
 		if (strikes == 1)
         {
             strike1.SetActive(true);
@@ -47,7 +60,29 @@ public class EndFail : MonoBehaviour {
         if (strikes == 5)
         {
             strike5.SetActive(true);
+            fired.SetActive(true);
         }
+
+        if(gameOver == true)
+        {
+            return;
+        }
+    }
+
+    void Count()
+    {
+        if(gameTime == 0)
+        {
+            gameOver = true;
+            CancelInvoke("Count");
+        }
+
+        else
+        {
+            gameTime--; 
+        }
+
+
     }
 
     void OnTriggerEnter(Collider other)

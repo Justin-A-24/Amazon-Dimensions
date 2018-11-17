@@ -9,34 +9,34 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1516402092727252}
+  m_RootGameObject: {fileID: 1585567072708212}
   m_IsPrefabAsset: 1
---- !u!1 &1516402092727252
+--- !u!1 &1585567072708212
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 224333875775317044}
-  - component: {fileID: 54089551700064226}
-  - component: {fileID: 65553828645039166}
-  - component: {fileID: 64813748622424232}
-  - component: {fileID: 222626783034057666}
-  - component: {fileID: 212746470742214546}
+  - component: {fileID: 224274875932421386}
+  - component: {fileID: 54126337746948864}
+  - component: {fileID: 65163931707100842}
+  - component: {fileID: 64326459879392290}
+  - component: {fileID: 222100983600725362}
+  - component: {fileID: 212393735339825928}
   m_Layer: 0
-  m_Name: Ducks - C
-  m_TagString: Objects
+  m_Name: Mind Control - S
+  m_TagString: Squares
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &54089551700064226
+--- !u!54 &54126337746948864
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1516402092727252}
+  m_GameObject: {fileID: 1585567072708212}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -46,12 +46,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64813748622424232
+--- !u!64 &64326459879392290
 MeshCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1516402092727252}
+  m_GameObject: {fileID: 1585567072708212}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -60,24 +60,24 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65553828645039166
+--- !u!65 &65163931707100842
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1516402092727252}
+  m_GameObject: {fileID: 1585567072708212}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.821821, y: 2.885558, z: 1}
-  m_Center: {x: 0.012478232, y: -0.041594148, z: 0}
---- !u!212 &212746470742214546
+  m_Size: {x: 1.1555619, y: 1.2748392, z: 0.9999997}
+  m_Center: {x: -0.006035234, y: -0.013822258, z: 0}
+--- !u!212 &212393735339825928
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1516402092727252}
+  m_GameObject: {fileID: 1585567072708212}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -107,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a9da4089d27c00c4c9cb810715656fb6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e91c96617200574abba8b8f8bec027d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,28 +118,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!222 &222626783034057666
+--- !u!222 &222100983600725362
 CanvasRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1516402092727252}
+  m_GameObject: {fileID: 1585567072708212}
   m_CullTransparentMesh: 0
---- !u!224 &224333875775317044
+--- !u!224 &224274875932421386
 RectTransform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1516402092727252}
+  m_GameObject: {fileID: 1585567072708212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.1}
-  m_LocalScale: {x: 0.57923, y: 0.57923, z: 0.57923}
+  m_LocalScale: {x: 1.7441933, y: 1.7441933, z: 1.7441933}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.44, y: -1.15}
+  m_AnchoredPosition: {x: -2.62, y: -1.15}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.4962077}

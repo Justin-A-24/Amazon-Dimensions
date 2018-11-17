@@ -24,9 +24,19 @@ public class RandomObjectSpawner : MonoBehaviour {
     {
         if (end.strikes >= 5)
         {
-            GameObject[] prefabs = GameObject.FindGameObjectsWithTag("Objects");
+            GameObject[] prefabs = GameObject.FindGameObjectsWithTag("Circles");
             foreach (GameObject objects in prefabs)
                 Destroy(objects);
+
+            GameObject[] triangles = GameObject.FindGameObjectsWithTag("Triangles");
+            foreach (GameObject objects in triangles)
+                Destroy(objects);
+
+            GameObject[] squares = GameObject.FindGameObjectsWithTag("Squares");
+            foreach (GameObject objects in squares)
+                Destroy(objects);
+
+
             return;
         }
 

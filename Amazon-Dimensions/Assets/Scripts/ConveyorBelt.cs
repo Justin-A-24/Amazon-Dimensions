@@ -15,11 +15,20 @@ public class ConveyorBelt : MonoBehaviour {
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Objects"))
+        if (other.gameObject.CompareTag("Circles"))
         {
             other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, speed * Time.deltaTime);
         }
 
+        else if (other.gameObject.CompareTag("Squares"))
+        {
+            other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, speed * Time.deltaTime);
+        }
+
+        else if (other.gameObject.CompareTag("Triangles"))
+        {
+            other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, speed * Time.deltaTime);
+        }
     }
 	
 	// Update is called once per frame
