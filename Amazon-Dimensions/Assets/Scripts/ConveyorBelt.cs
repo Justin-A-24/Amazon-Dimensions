@@ -8,6 +8,11 @@ public class ConveyorBelt : MonoBehaviour {
     public Transform endpoint;
     public float speed;
 
+    public Animation anim;
+    public AudioSource audi;
+
+    public EndFail end;
+
     void OnTriggerStay(Collider other)
     {
         other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, speed* Time.deltaTime);
@@ -15,6 +20,12 @@ public class ConveyorBelt : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
+        if (end.strikes >= 3)
+        {
+            anim.gameObject.GetComponent<Animator>().enabled = false;
+            audi.gameObject.GetComponent<AudioSource>().Stop();
+        }
 		
 	}
 }

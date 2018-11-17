@@ -24,6 +24,9 @@ public class RandomObjectSpawner : MonoBehaviour {
     {
         if (end.strikes >= 3)
         {
+            GameObject[] prefabs = GameObject.FindGameObjectsWithTag("Objects");
+            foreach (GameObject objects in prefabs)
+                Destroy(objects);
             return;
         }
 
