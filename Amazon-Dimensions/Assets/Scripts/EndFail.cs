@@ -15,7 +15,7 @@ public class EndFail : MonoBehaviour {
     public int gameTime;
     public Text timeText;
 
-    public bool gameOver;
+    public bool gameOver, gameWin;
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +30,8 @@ public class EndFail : MonoBehaviour {
         InvokeRepeating("Count", 0.0f, 1.0f);
 
         gameOver = false;
+        gameWin = false;
+
     }
 	
 	// Update is called once per frame
@@ -61,11 +63,17 @@ public class EndFail : MonoBehaviour {
         {
             strike5.SetActive(true);
             fired.SetActive(true);
+            gameOver = true;
         }
 
-        if(gameOver == true)
+        if (gameOver == true)
         {
             return;
+        }
+        
+        if (gameWin == true)
+        {
+
         }
     }
 
@@ -73,7 +81,7 @@ public class EndFail : MonoBehaviour {
     {
         if(gameTime == 0)
         {
-            gameOver = true;
+            gameWin = true;
             CancelInvoke("Count");
         }
 
