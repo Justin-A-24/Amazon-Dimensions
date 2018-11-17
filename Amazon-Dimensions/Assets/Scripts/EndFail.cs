@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EndFail : MonoBehaviour {
 
@@ -68,12 +69,12 @@ public class EndFail : MonoBehaviour {
 
         if (gameOver == true)
         {
-            return;
+            SceneManager.LoadScene("Game Over");
         }
         
         if (gameWin == true)
         {
-
+            SceneManager.LoadScene("Credit");
         }
     }
 
