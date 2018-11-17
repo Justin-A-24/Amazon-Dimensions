@@ -7,12 +7,12 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed;
 
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Vector2 moveVelocity;
 
     void start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        //rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
