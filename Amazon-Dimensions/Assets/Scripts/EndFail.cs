@@ -37,7 +37,6 @@ public class EndFail : MonoBehaviour {
             strike3.SetActive(true);
             failText.text = "You fucking suck";
 
-
         }
     }
 
