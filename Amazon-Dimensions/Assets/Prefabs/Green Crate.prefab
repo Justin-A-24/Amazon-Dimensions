@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4825635396251884}
   - component: {fileID: 33413067941977398}
   - component: {fileID: 23250448119389068}
-  - component: {fileID: 65352566648406120}
-  - component: {fileID: 54974300231365186}
-  - component: {fileID: 64166873567604868}
+  - component: {fileID: 54309040733038866}
+  - component: {fileID: 65079933764764258}
+  - component: {fileID: 64981051357994220}
   m_Layer: 0
   m_Name: Green Crate
   m_TagString: Objects
@@ -86,7 +86,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1532088983771982}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54974300231365186
+--- !u!54 &54309040733038866
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,7 +101,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64166873567604868
+--- !u!64 &64981051357994220
 MeshCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,14 +115,14 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65352566648406120
+--- !u!65 &65079933764764258
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1532088983771982}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}

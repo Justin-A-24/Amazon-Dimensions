@@ -5,29 +5,45 @@ using UnityEngine.UI;
 
 public class EndFail : MonoBehaviour {
 
-    public GameObject packagedObject;
+    public GameObject strike1, strike2, strike3;
     public Transform endpoint;
     public int strikes;
 
     public Text failText;
 
-    void OnTriggerExit(Collider other)
-    {
-        Destroy(other.gameObject);
-        strikes = strikes + 1;
-    }
-
 	// Use this for initialization
 	void Start () {
         failText.text = "";
-	}
+        strike1.GetComponent<GameObject>();
+        strike2.GetComponent<GameObject>();
+        strike3.GetComponent<GameObject>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-		if (strikes == 3)
+		if (strikes == 1)
         {
-            failText.text = "You fucking suck.";
+            strike1.SetActive(true);
         }
-	}
+
+        if (strikes == 2)
+        {
+            strike2.SetActive(true);
+        }
+
+        if (strikes == 3)
+        {
+            strike3.SetActive(true);
+            failText.text = "You fucking suck";
+
+
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
+        strikes = strikes + 1;
+    }
 }
